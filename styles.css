@@ -1,0 +1,114 @@
+:root {
+    --clr-primary-darkCyan: hsl(158, 36%, 37%);
+    --clr-primary-cream: hsl(30, 38%, 92%);
+    --clr-neutral-veryDarkBlue: hsl(212, 21%, 14%);
+    --clr-neutral-darkGrayishBlue: hsl(228, 12%, 48%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-accent: 'Fraunces', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-primary-cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+main {
+    background-color: var(--clr-neutral-white);
+    width: 90vw;
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+main #heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--ff-primary);
+    color: var(--clr-neutral-darkGrayishBlue);
+}
+
+p {
+    font-size: 0.875em;
+    color: var(--clr-neutral-darkGrayishBlue);
+}
+
+main .price {
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    color: var(--clr-primary-darkCyan);
+    font-size: 2rem;
+    width: 100%;
+}
+
+span {
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    color: var(--clr-neutral-darkGrayishBlue);
+    text-decoration: line-through;
+    font-size: 0.75rem;
+}
+
+button {
+    background-color: var(--clr-primary-darkCyan);
+    color: var(--clr-neutral-white);
+    border-radius: 5px;
+    width: 85%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    margin: 0em 0em 2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
