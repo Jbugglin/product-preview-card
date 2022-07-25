@@ -124,7 +124,7 @@ p {
     }
     main {
         background-color: var(--clr-neutral-white);
-        max-width: 37vw;
+        width: 525px;
         height: 60vh;
         border-radius: 10px;
         display: flex;
